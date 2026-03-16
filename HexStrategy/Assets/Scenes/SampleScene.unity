@@ -461,9 +461,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8609987959800744c95bdeedc14a4ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProceduralGenerationManager
-  _mapWidth: 100
-  _mapHeight: 100
-  _seed: 12345
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 4771530947012308292, guid: 0396a99e939e35b40a49afca96cc5678, type: 3}
+    - {fileID: 919132149155446097, guid: 652a8086019dbda40b426a0e76dc8c64, type: 3}
+    - {fileID: 7737377655663795703, guid: 29632bcfcd78121489fbf2be6c0bb07a, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _terrainPrefabs
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Grass
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Water
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Mountain
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _seed: 1
+  _mapWidth: 50
+  _mapHeight: 50
+  _scale: 0.1
+  _waterHeight: 0.3
+  _grassHeight: 0.5
+  _grasstransitionHeight: 0.53
+  _grasslevel2Height: 0.8
+  _mountainHeight: 1
+  _hexOuterRadius: 1
 --- !u!4 &909122945
 Transform:
   m_ObjectHideFlags: 0

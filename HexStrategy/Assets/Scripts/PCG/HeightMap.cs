@@ -15,6 +15,9 @@ public class HeightMap
 
         _heightArray = new float[_width, _height];
 
+        //gets a random offset for the noise
+        //ensures different maps for different seeds
+        //system.random means that same seed will always produce the same offset
         System.Random rand = new System.Random(seed);
         _seedOffset = new Vector2(rand.Next(-100000, 100000), rand.Next(-100000, 100000));
     }
@@ -35,5 +38,9 @@ public class HeightMap
     public float GetHeight(int x, int y)
     {
         return _heightArray[x, y];
+    }
+    public float[,] GetHeightMap()
+    {
+        return _heightArray;
     }
 }
