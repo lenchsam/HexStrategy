@@ -2,6 +2,12 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# paid assets
+Assets/Plugins/Sirenix/
+Assets/Assets/KayKit
+Assets/Assets/vHierarchy
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
