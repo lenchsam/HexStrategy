@@ -473,6 +473,24 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: _scale
+      Entry: 4
+      Data: 0.0718
+    - Name: _waterHeight
+      Entry: 4
+      Data: 0.4
+    - Name: _grassHeight
+      Entry: 4
+      Data: 0.5
+    - Name: _grasstransitionHeight
+      Entry: 4
+      Data: 0.53
+    - Name: _grasslevel2Height
+      Entry: 4
+      Data: 0.8
+    - Name: _mountainHeight
+      Entry: 4
+      Data: 1
     - Name: _terrainPrefabs
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.GameObject,
@@ -532,13 +550,6 @@ MonoBehaviour:
   _seed: 1
   _mapWidth: 50
   _mapHeight: 50
-  _scale: 0.1
-  _waterHeight: 0.3
-  _grassHeight: 0.5
-  _grasstransitionHeight: 0.53
-  _grasslevel2Height: 0.8
-  _mountainHeight: 1
-  _hexOuterRadius: 1
 --- !u!4 &909122945
 Transform:
   m_ObjectHideFlags: 0

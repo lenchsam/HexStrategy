@@ -10,17 +10,17 @@ public class ProceduralGenerationManager : SerializedMonoBehaviour
     [SerializeField] private int _seed = 12345;
     [SerializeField] private int _mapWidth = 100;
     [SerializeField] private int _mapHeight = 100;
-    [SerializeField] private float _scale = 1.0f;
+    [SerializeField] [Range(0, 0.2f)] private readonly float _scale = 1.0f;
 
     [Header("Height Thresholds")]
-    [SerializeField] private float _waterHeight = 0.3f;
-    [SerializeField] private float _grassHeight = 0.5f;
-    [SerializeField] private float _grasstransitionHeight = 0.53f;
-    [SerializeField] private float _grasslevel2Height = 0.8f;
-    [SerializeField] private float _mountainHeight = 1.0f;
+    [SerializeField] private readonly float _waterHeight = 0.3f;
+    [SerializeField] private readonly float _grassHeight = 0.5f;
+    [SerializeField] private readonly float _grasstransitionHeight = 0.53f;
+    [SerializeField] private readonly float _grasslevel2Height = 0.8f;
+    [SerializeField] private readonly float _mountainHeight = 1.0f;
 
-    [Header("Hex Settings")]
-    [SerializeField] private float _hexOuterRadius = 1f;
+    //1.155 is the scale for the hex prefabs to fit together without gaps
+    private const float _hexOuterRadius = 1.155f;
 
     [Header("Prefabs")]
     //this is serialised using odin inspector so data is assigned in editor
@@ -68,7 +68,7 @@ public class ProceduralGenerationManager : SerializedMonoBehaviour
 
                 hexPosition.y = GetHeightStep(heightValue);
 
-                Instantiate(GetPrefabForHeight(heightValue), hexPosition, Quaternion.identity, mapParent.transform);
+                GameObject tile = Instantiate(GetPrefabForHeight(heightValue), hexPosition, Quaternion.identity, mapParent.transform);
             }
         }
     }
