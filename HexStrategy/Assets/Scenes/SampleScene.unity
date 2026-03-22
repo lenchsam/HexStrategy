@@ -465,6 +465,9 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 2100000, guid: b3c8688910f44174dbff5bc9705db7d9, type: 2}
+    - {fileID: 2100000, guid: 71f5b98b7e584b64b98f35048a226d73, type: 2}
+    - {fileID: 2100000, guid: 79e9494fc59036847be75671559b3d17, type: 2}
     - {fileID: 4771530947012308292, guid: 0396a99e939e35b40a49afca96cc5678, type: 3}
     - {fileID: 919132149155446097, guid: 652a8086019dbda40b426a0e76dc8c64, type: 3}
     - {fileID: 7737377655663795703, guid: 29632bcfcd78121489fbf2be6c0bb07a, type: 3}
@@ -488,12 +491,12 @@ MonoBehaviour:
     - Name: _grasslevel2Height
       Entry: 4
       Data: 0.8
-    - Name: _mountainHeight
+    - Name: _temperatureScale
       Entry: 4
-      Data: 1
-    - Name: _terrainPrefabs
+      Data: 0.2
+    - Name: _biomeMaterialPrefabs
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.GameObject,
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.Material,
         UnityEngine.CoreModule]], mscorlib
     - Name: comparer
       Entry: 7
@@ -510,7 +513,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Grass
+      Data: Desert
     - Name: $v
       Entry: 10
       Data: 0
@@ -522,7 +525,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Water
+      Data: Forest
     - Name: $v
       Entry: 10
       Data: 1
@@ -534,7 +537,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Mountain
+      Data: Tundra
     - Name: $v
       Entry: 10
       Data: 2
@@ -547,9 +550,67 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _terrainPrefabs
+      Entry: 7
+      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Grass
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Water
+    - Name: $v
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Mountain
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   _seed: 1
   _mapWidth: 50
   _mapHeight: 50
+  _coldThreshold: 0.3
+  _hotThreshold: 0.6
 --- !u!4 &909122945
 Transform:
   m_ObjectHideFlags: 0
